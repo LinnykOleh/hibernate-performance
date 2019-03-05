@@ -14,6 +14,7 @@ import java.util.List;
 @BatchSize(size = 5)
 @Table(name = "Client")
 public class Client {
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id_client")

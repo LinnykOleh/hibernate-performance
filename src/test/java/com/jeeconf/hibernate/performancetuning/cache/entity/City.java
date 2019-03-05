@@ -13,6 +13,7 @@ import javax.persistence.*;
 @Cache(region = "referenceCache", usage = CacheConcurrencyStrategy.READ_ONLY)
 @Immutable
 public class City {
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id_city")

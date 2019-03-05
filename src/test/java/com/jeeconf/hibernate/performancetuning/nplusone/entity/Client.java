@@ -20,6 +20,6 @@ public class Client {
     private String name;
     private int age;
 
-    @OneToMany(mappedBy = "client")
+    @OneToMany(mappedBy = "client", fetch = FetchType.EAGER)
     private List<Account> accounts = new ArrayList<>();
 }

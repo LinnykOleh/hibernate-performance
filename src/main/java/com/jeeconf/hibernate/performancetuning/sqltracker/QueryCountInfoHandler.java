@@ -1,6 +1,7 @@
 package com.jeeconf.hibernate.performancetuning.sqltracker;
 
 public class QueryCountInfoHandler implements QueryHandler {
+
     @Override
     public void handleSql(String sql) {
         QueryType queryType = getQueryType(sql);

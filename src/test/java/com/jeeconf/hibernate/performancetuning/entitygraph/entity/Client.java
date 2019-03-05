@@ -10,7 +10,7 @@ import java.util.List;
 @Entity(name = "EntityGraphClient")
 @Getter
 @Setter
-@NamedEntityGraphs({
+@NamedEntityGraphs({ // говорит о том, что хочу подтянуть сразу некий граф объектов
         @NamedEntityGraph(name = Client.ACCOUNTS_GRAPH,
                 attributeNodes = @NamedAttributeNode("accounts"))
 })

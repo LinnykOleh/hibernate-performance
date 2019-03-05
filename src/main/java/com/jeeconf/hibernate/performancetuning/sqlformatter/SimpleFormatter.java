@@ -5,6 +5,7 @@ import org.hibernate.engine.jdbc.internal.BasicFormatterImpl;
 import org.hibernate.engine.jdbc.internal.Formatter;
 
 public class SimpleFormatter implements MessageFormattingStrategy {
+
     private static final Formatter HIBERNATE_SQL_FORMATTER = new BasicFormatterImpl();
 
     @Override
